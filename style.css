@@ -556,3 +556,152 @@
       display: inline-block;
       margin: 0 4px;
   }
+
+  /* ================= RESPONSIVE ================= */
+
+  /* Tablets and small laptops */
+  @media (max-width: 900px) {
+      .memory-card {
+          width: 190px;
+          height: 250px;
+          margin: 0 10px;
+      }
+
+      .memory-img {
+          height: 110px;
+      }
+
+      .letter-box {
+          max-width: 90%;
+      }
+  }
+
+  /* Phones */
+  @media (max-width: 600px) {
+      .login-box {
+          padding: 32px 22px;
+          border-radius: 18px;
+      }
+
+      .login-box h1 {
+          font-size: 1.3rem;
+      }
+
+      .beating-heart {
+          font-size: 2.4rem;
+      }
+
+      .hero-emojis {
+          font-size: 1.8rem;
+      }
+
+      .scroll-hint {
+          margin-top: 26px;
+          font-size: .75rem;
+      }
+
+      .letter-section {
+          padding: 60px 16px;
+      }
+
+      .letter-box p {
+          line-height: 1.75;
+          text-align: left;
+      }
+
+      .letter-box .sign {
+          font-size: 1rem;
+      }
+
+      .memories-section {
+          padding: 60px 0;
+      }
+
+      .memories-title {
+          margin-bottom: 26px;
+          padding: 0 16px;
+      }
+
+      .memory-card {
+          width: 150px;
+          height: 210px;
+          margin: 0 8px;
+          padding: 10px;
+          font-size: .8rem;
+          border-radius: 16px;
+      }
+
+      .memory-img {
+          height: 90px;
+          margin-bottom: 6px;
+          border-radius: 10px;
+      }
+
+      .memory-card .cap {
+          font-size: .68rem;
+      }
+
+      .marquee-row.left,
+      .marquee-row.right {
+          animation-duration: 22s;
+      }
+
+      .balloon {
+          font-size: 34px !important;
+      }
+
+      .final-section {
+          padding: 50px 16px;
+      }
+
+      .final-names {
+          font-size: .95rem;
+          padding: 0 10px;
+      }
+
+      .final-sub {
+          font-size: .92rem;
+          padding: 0 6px;
+      }
+
+      .final-hearts {
+          font-size: 1.6rem;
+      }
+  }
+
+  /* Very small phones */
+  @media (max-width: 380px) {
+      .login-box {
+          padding: 26px 16px;
+      }
+
+      .login-box input,
+      .login-box button {
+          font-size: .88rem;
+          padding: 11px 13px;
+      }
+
+      .memory-card {
+          width: 130px;
+          height: 190px;
+      }
+
+      .memory-img {
+          height: 75px;
+      }
+  }
+
+  /* Respect reduced motion preference */
+  @media (prefers-reduced-motion: reduce) {
+
+      .bg-heart,
+      .balloon,
+      .falling-heart,
+      .marquee-row.left,
+      .marquee-row.right,
+      .beating-heart,
+      .hero-emojis span,
+      .final-hearts span {
+          animation: none !important;
+      }
+  }
